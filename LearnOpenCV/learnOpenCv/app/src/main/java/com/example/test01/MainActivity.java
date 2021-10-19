@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
         mat1 = inputFrame.rgba();
         //Xoay frame 90 do:
         Core.transpose(mat1, mat2);
-        Imgproc.resize(mat2, mat3,mat1.size(),0,0,0);
+        Imgproc.resize(mat2, mat3,mat3.size(),0,0,0);
         Core.flip(mat2, mat1, 1);
         return mat1;
     }
